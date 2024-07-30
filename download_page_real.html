@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+
+  <head>
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>Woreto Download Page</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+	================================================== -->
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+    <link rel="icon" href="logo.png" type="image/x-icon" />
+  </head>
+
+  <body id="top">
+    <!--	<nav class="bg-white dark:bg-black shadow-lg fixed w-full max-w-screen-3xl z-20">-->
+    <!--		<div class="mx-auto px-4">-->
+    <!--			<div class="flex justify-between justify-items">-->
+    <!--				<div>-->
+    <!--					&lt;!&ndash; Website Logo &ndash;&gt;-->
+    <!--					<a href="#" class="flex items-center  py-4 px-2">-->
+    <!--						<img src="logo.png" alt="Woreto Logo" class="h-8 w-8 mr-2">-->
+    <!--						<span class="font-semibold text-xl text-orange-100">Woreto</span>-->
+    <!--					</a>-->
+    <!--				</div>-->
+    <!--				&lt;!&ndash; Primary Navbar items &ndash;&gt;-->
+    <!--				<div class="hidden md:flex items-center space-x-1">-->
+    <!--					<a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:orange-100 transition duration-300">Home</a>-->
+    <!--					<a href="features.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-orange-100 transition duration-300">Features</a>-->
+    <!--					<a href="" class="py-4 px-2 text-gray-500 font-semibold hover:text-orange-100 transition duration-300"">Contact Us</a>-->
+    <!--					<a href="download%20page.html" class="px-2 text-orange-100 border-b-4 border-orange-100 font-semibold">Download</a>-->
+    <!--				</div>-->
+    <!--				&lt;!&ndash; Secondary Navbar items &ndash;&gt;-->
+    <!--				&lt;!&ndash;                sexy download button for the download page - https://codepen.io/Varo/pen/vGGRyZ &ndash;&gt;-->
+    <!--				<div class="transition ease-in-out delay-100 bg-blue-500 mb-2 shadow-lg shadow-indigo-500/40 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 flex mt-3 w-48 h-14 bg-amber-300 text-white rounded-lg items-center justify-center">-->
+    <!--					<div class="mr-3">-->
+    <!--						<svg viewBox="30 336.7 120.9 129.2" width="30">-->
+    <!--							<path fill="#FFD400" d="M119.2,421.2c15.3-8.4,27-14.8,28-15.3c3.2-1.7,6.5-6.2,0-9.7  c-2.1-1.1-13.4-7.3-28-15.3l-20.1,20.2L119.2,421.2z"/>-->
+    <!--							<path fill="#FF3333" d="M99.1,401.1l-64.2,64.7c1.5,0.2,3.2-0.2,5.2-1.3  c4.2-2.3,48.8-26.7,79.1-43.3L99.1,401.1L99.1,401.1z"/>-->
+    <!--							<path fill="#48FF48" d="M99.1,401.1l20.1-20.2c0,0-74.6-40.7-79.1-43.1  c-1.7-1-3.6-1.3-5.3-1L99.1,401.1z"/>-->
+    <!--							<path fill="#3BCCFF" d="M99.1,401.1l-64.3-64.3c-2.6,0.6-4.8,2.9-4.8,7.6  c0,7.5,0,107.5,0,113.8c0,4.3,1.7,7.4,4.9,7.7L99.1,401.1z"/>-->
+    <!--						</svg>-->
+    <!--					</div>-->
+    <!--					<div>-->
+    <!--						<div class="text-xs">GET IT ON</div>-->
+    <!--						<div class="text-xl font-semibold font-sans -mt-1">Google Play</div>-->
+    <!--					</div>-->
+    <!--				</div>-->
+
+    <!--				<div class="md:hidden flex items-center">-->
+    <!--					<button class="outline-none mobile-menu-button">-->
+    <!--						<svg class=" w-6 h-6 text-gray-500 hover:text-orange-100 "-->
+    <!--							 x-show="!showMenu"-->
+    <!--							 fill="none"-->
+    <!--							 stroke-linecap="round"-->
+    <!--							 stroke-linejoin="round"-->
+    <!--							 stroke-width="2"-->
+    <!--							 viewBox="0 0 24 24"-->
+    <!--							 stroke="currentColor"-->
+    <!--						>-->
+    <!--							<path d="M4 6h16M4 12h16M4 18h16"></path>-->
+    <!--						</svg>-->
+    <!--					</button>-->
+    <!--				</div>-->
+    <!--			</div>-->
+    <!--		</div>-->
+    <!--		<div class="hidden mobile-menu">-->
+    <!--			<ul class="">-->
+    <!--				<li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-black bg-orange-100 font-semibold">Home</a></li>-->
+    <!--				<li><a href="#features.html" class="block text-sm px-2 py-4 hover:bg-orange-100 text-white transition duration-300">Features</a></li>-->
+    <!--				<li><a href="#about" class="block text-sm px-2 py-4 hover:bg-orange-100  text-white transition duration-300">About Us</a></li>-->
+    <!--				<li><a href="#download_page.html" class="block text-sm px-2 py-4 hover:bg-orange-100 text-white transition duration-300">Download</a></li>-->
+    <!--			</ul>-->
+    <!--		</div>-->
+    <!--		<script>-->
+    <!--			const btn = document.querySelector("button.mobile-menu-button");-->
+    <!--			const menu = document.querySelector(".mobile-menu");-->
+
+    <!--			btn.addEventListener("click", () => {-->
+    <!--				menu.classList.toggle("hidden");a-->
+    <!--			});-->
+    <!--		</script>-->
+    <!--	</nav>-->
+    <header id="header" class="row">
+      <div class="header-logo">
+        <a href="index.html">Woreto.</a>
+      </div>
+
+      <nav id="header-nav-wrap">
+        <ul class="header-main-nav">
+          <li>
+            <a class="mt-4" href="index.html" title="home">Home</a>
+          </li>
+          <!-- <li><a class=""  href="features.html" title="about">Features</a></li> -->
+          <li><a class="" href="privacy_policy.html">Privacy</a></li>
+          <li>
+            <a class="" href="#download" title="download">Download</a>
+          </li>
+        </ul>
+
+        <!-- <a
+          href="#download"
+          title="sign-up"
+          class="button button-primary smoothscroll button stroke"
+          >Download</a
+        > -->
+      </nav>
+
+      <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    </header>
+
+    <!-- header
+================================================== -->
+
+    <!-- /header -->
+
+    <!-- home
+   ================================================== -->
+    <section
+      id="home"
+      data-parallax="scroll"
+      data-image-src="images/bg1.png"
+      data-natural-width="3000"
+      data-natural-height="2000"
+    >
+      <div class="overlay"></div>
+      <div class="home-content">
+        <div class="row contents">
+          <div class="home-content-left">
+            <h3 data-aos="fade-up">Welcome to Woreto</h3>
+
+            <h1 data-aos="fade-up">
+              All Your <br />
+              Fashion Needs <br />
+              In One Place.
+            </h1>
+
+            <div class="buttons" data-aos="fade-up">
+              <a href="#download" class="smoothscroll button stroke">
+                <span class="icon-circle-down" aria-hidden="true"></span>
+                Download App
+              </a>
+            </div>
+          </div>
+
+          <div class="home-image-right">
+            <img
+              src="1-homepage-Photoroom.png-Photoroom.png"
+              data-aos="fade-up"
+              style="max-width: 450px"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- end home-content -->
+
+      <ul class="home-social-list">
+        <li>
+          <a href="https://twitter.com/WoretoC">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://instagram.com/officialworeto?igshid=YmMyMTA2M2Y="
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/woreto-company-50a073248"
+            ><i class="fa fa-linkedin-square"></i
+          ></a>
+        </li>
+      </ul>
+      <!-- end home-social-list -->
+
+      <div class="home-scrolldown">
+        <a href="#download" class="scroll-icon smoothscroll">
+          <span>Scroll Down</span>
+          <i class="icon-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+    <!-- end home -->
+
+    <!-- about
+    ================================================== -->
+    <section id="about">
+      <div class="row about-intro">
+        <div class="col-four">
+          <h1 class="intro-header" data-aos="fade-up">About Our App</h1>
+        </div>
+        <div class="col-eight">
+          <p class="lead" data-aos="fade-up">
+            Introducing our new all in one fashion needs app with all your needs
+            in one place; powered by AI technology! This app brings together all
+            the latest fashion trends and deals in one convenient location. With
+            our app, you can browse through a wide selection of fashion
+            websites, from luxury brands to affordable retailers. Our AI
+            algorithms analyze your preferences and browsing history to provide
+            personalized recommendations tailored just for you. You'll never
+            miss out on the latest fashion trends with our app at your
+            fingertips. In addition to personalized recommendations, our app
+            offers fashion tips and advice based on your appearance. Whether
+            you're looking for advice on how to dress for a specific occasion or
+            how to accessorize your outfit, our app has got you covered. But
+            that's not all - our app also offers exclusive coupon codes and
+            deals from your favorite fashion retailers. You can save money on
+            your purchases and stay on top of your budget while still looking
+            stylish. So why wait? Download Woreto today and stay ahead of the
+            fashion game!
+          </p>
+        </div>
+      </div>
+
+      <div class="row about-features">
+        <div class="features-list block-1-3 block-m-1-2 block-mob-full group">
+          <div class="bgrid feature" data-aos="fade-up">
+            <span class="icon"><i class="icon-window"></i></span>
+
+            <div class="service-content">
+              <h3>All apps in one</h3>
+
+              <p>
+                With this app, users can easily discover new brands, browse
+                through a vast collection of clothing, shoes, and accessories,
+                and create their own customized wardrobes. The app aims to
+                provide an immersive and engaging shopping experience, making it
+                the go-to destination for anyone who wants to look their best
+                effortlessly.
+              </p>
+            </div>
+          </div>
+          <!-- /bgrid -->
+
+          <div class="bgrid feature" data-aos="fade-up">
+            <span class="icon"><i class="icon-image"></i></span>
+
+            <div class="service-content">
+              <h3>Fashion Tips</h3>
+
+              <p>
+                Woreto is a cutting-edge fashion app that provides personalized
+                recommendations based on various factors such as user height,
+                skin tone, and other style preferences. By leveraging the power
+                of AI technology, Woreto analyzes a user's physical attributes
+                and style preferences to provide tailored recommendations that
+                are unique to each user
+              </p>
+            </div>
+          </div>
+          <!-- /bgrid -->
+
+          <div class="bgrid feature" data-aos="fade-up">
+            <span class="icon"><i class="icon-paint-brush"></i></span>
+
+            <div class="service-content">
+              <h3>Coupon Codes</h3>
+
+              <p>
+                Woreto provides users with access to exclusive coupons and
+                deals, which are inbuilt in the app. With these coupons, users
+                can enjoy discounts on their favorite fashion items from a wide
+                range of brands and retailers. Users can easily access these
+                coupons within the app, and redeem them directly when making
+                purchases.
+              </p>
+            </div>
+          </div>
+          <!-- /bgrid -->
+
+          <div class="bgrid feature" data-aos="fade-up">
+            <span class="icon"><i class="icon-file"></i></span>
+
+            <div class="service-content">
+              <h3>Personal Wardrobe</h3>
+
+              <p>
+                Woreto has the ability for users to create a personal wardrobe
+                within the app. This feature enables users to store their
+                favorite clothing items, shoes, and accessories in one place,
+                making it easy to keep track of their wardrobe and plan their
+                outfits.Woreto helps users to better organize their fashion
+                items and get the most out of their wardrobe.
+              </p>
+            </div>
+          </div>
+          <!-- /bgrid -->
+
+          <!-- /bgrid -->
+
+          <!-- /bgrid -->
+        </div>
+        <!-- end features-list -->
+      </div>
+      <!-- end about-features -->
+
+      <!-- end about-how-content -->
+    </section>
+    <!-- end about -->
+
+    <!-- pricing
+    ================================================== -->
+    <!-- end pricing -->
+
+    <!-- Testimonials Section
+    ================================================== -->
+    <!-- end testimonials -->
+
+    <!-- download
+    ================================================== -->
+    <section id="download">
+      <div class="row">
+        <div class="col-full">
+          <h1 class="intro-header" data-aos="fade-up">
+            Download Our App Today!
+          </h1>
+
+          <p class="lead" data-aos="fade-up">
+            Download Woreto today and take your fashion game to another level!
+          </p>
+
+          <ul class="download-badges">
+            <li>
+              <a href="" title="" class="badge-appstore" data-aos="fade-up"
+                >App Store</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.woreto.woreto_1&hl=en_IN&gl=US"
+                title=""
+                class="badge-googleplay"
+                data-aos="fade-up"
+                >Play Store</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- end download -->
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+      <div class="footer-main">
+        <div class="row">
+          <div class="col-three md-1-3 tab-full footer-info">
+            <div class="footer-logo mb-10"></div>
+
+            <p>
+              Woreto is an all in one fashion needs app with all your needs in
+              one place; powered by AI technology! Download Woreto today and
+              stay ahead of the fashion game!
+            </p>
+
+            <br />
+          </div>
+          <!-- end footer-info -->
+
+          <div class="col-three md-1-3 tab-1-2 mob-full footer-contact">
+            <h4>Contact</h4>
+
+            <p>
+              Woreto.com<br />
+              <!-- R-7/E-60 Rajnagar ,Ghaziabad<br /> -->
+              woreto.com@gmail.com<br />
+            </p>
+          </div>
+          <!-- end footer-contact -->
+
+          <div class="col-two md-1-3 tab-1-2 mob-full footer-site-links">
+            <h4>Site Links</h4>
+
+            <ul class="list-links">
+              <li><a href="index.html">Home</a></li>
+              <!-- <li><a href="features.html">Features</a></li> -->
+              <li><a href="privacy_policy.html">Privacy</a></li>
+              <li>
+                <a href="download_page_real.html">Download</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end footer-site-links -->
+
+          <!-- end footer-subscribe -->
+        </div>
+        <!-- /row -->
+      </div>
+      <!-- end footer-main -->
+
+      <div class="footer-bottom">
+        <div class="row">
+          <div class="col-twelve">
+            <div id="go-top">
+              <a class="smoothscroll" title="Back to Top" href="#top"
+                ><i class="icon-arrow-up"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- end footer-bottom -->
+      </div>
+    </footer>
+
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

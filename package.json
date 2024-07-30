@@ -1,0 +1,11 @@
+{
+  "name": "download_page_demo1",
+  "version": "1.0.0",
+  "dependencies": {
+    "firebase": "^9.21.0",
+    "postcss-cli": "^10.1.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
